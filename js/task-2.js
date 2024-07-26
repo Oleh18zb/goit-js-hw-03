@@ -1,5 +1,10 @@
 function makeArray(firstArray, secondArray, maxLength) {
-    
+    const totalArray = [...firstArray, ...secondArray];
+    if (totalArray.length > maxLength) {
+        return totalArray.slice(0, maxLength);
+    } else {
+        return totalArray;
+    }
 }
 
 

@@ -1,7 +1,7 @@
 function slugify(title) {
     let lowerCase = title.toLowerCase();
-    let words = lowerCase.split(' ');
-    let slug = words.join('-');
+    let creatArray = lowerCase.split(' ');
+    let slug = creatArray.join('-');
     return slug;
 }
 
